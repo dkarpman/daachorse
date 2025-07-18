@@ -1,6 +1,6 @@
 use core::cell::RefCell;
 use core::num::NonZeroU32;
-
+use core::hash::Hash;
 use alloc::vec::Vec;
 use hashbrown::HashMap;
 
