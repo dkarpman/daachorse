@@ -17,6 +17,7 @@ categories = ["text-processing", "algorithms", "data-structures", "no-std"]
 exclude = [".*"]
 
 [dependencies]
+hashbrown = { version = "0.15", features = ["inline-more"]}
 
 [dev-dependencies]
 
