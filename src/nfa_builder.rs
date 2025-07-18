@@ -30,8 +30,8 @@ impl EdgeLabel for char {
 }
 
 /// Mapping edge lables to child ids using `BTreeMap`.
-type EdgeMap<L> = alloc::collections::BTreeMap<L, u32>;
-// type EdgeMap<L> = HashMap<L, u32>;
+// type EdgeMap<L> = alloc::collections::BTreeMap<L, u32>;
+type EdgeMap<L> = HashMap<L, u32>;
 
 /// State of [`NfaBuilder`].
 #[derive(Clone)]
