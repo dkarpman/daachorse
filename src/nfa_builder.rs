@@ -13,7 +13,7 @@ pub const ROOT_STATE_ID: u32 = 0;
 // The dead state id of SparseNFA.
 pub const DEAD_STATE_ID: u32 = 1;
 
-pub trait EdgeLabel: Copy + Ord + core::fmt::Debug {
+pub trait EdgeLabel: Copy + Ord + Hash + core::fmt::Debug {
     fn num_bytes(&self) -> usize;
 }
 
