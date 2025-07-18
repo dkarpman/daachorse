@@ -2,6 +2,7 @@ use core::cell::RefCell;
 use core::num::NonZeroU32;
 
 use alloc::vec::Vec;
+use hashbrown::HashMap;
 
 use crate::errors::{DaachorseError, Result};
 use crate::utils::FromU32;
@@ -29,7 +30,8 @@ impl EdgeLabel for char {
 }
 
 /// Mapping edge lables to child ids using `BTreeMap`.
-type EdgeMap<L> = alloc::collections::BTreeMap<L, u32>;
+// type EdgeMap<L> = alloc::collections::BTreeMap<L, u32>;
+type EdgeMap<L> = HashMap<L, u32>;
 
 /// State of [`NfaBuilder`].
 #[derive(Clone)]
